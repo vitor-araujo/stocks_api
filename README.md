@@ -27,7 +27,6 @@ Stock API is a RESTful service that allows users to retrieve and update stock in
 - **GET /stock/{stock_symbol}**: Fetch stock data for the given symbol. Defaults to yesterday if no date is provided.
 - **GET /stock/{stock_symbol}/{date}**: Fetch stock data for the given symbol on the specified date.
 
-# response model
 ```json
 {
     "status": "String",
@@ -66,6 +65,11 @@ Stock API is a RESTful service that allows users to retrieve and update stock in
 
 - **POST /stock/{stock_symbol}**: Update the stock entity with the purchased amount based on the received argument.
 
+```json
+{
+	"message": "9999 units of stock meta were added to your stock record"
+}
+```
 ## Usage
 
 ### Environment Variables
