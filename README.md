@@ -88,25 +88,31 @@ Stock API is a RESTful service that allows users to retrieve and update stock in
 - `Supabase`: Client for interacting with Supabase.
 - `dotenv`: Library to load environment variables.
 - `pytest`: Testing framework for Python.
+- `Docker`: Container manager.
 
+## Setup Instructions
 
-Ensure you have all the env variables set corretly as the env example shows. Supabase will require you to create the models there, follow this modelling if you need for the basic functionality to be enabled. 
+### Step 1: Environment Variables
+Ensure you have all the environment variables set correctly as shown in the `.env.example` file. 
+
+### Step 2: Supabase Setup
+If you are starting from scratch, follow these instructions to set up your Supabase tables. If you already have a Supabase key and URL set up, skip to Step 3.
+
+Supabase will require you to create the models there. Follow this data model for the basic functionality to be enabled:
 
 <div align="center">
   <img src="images/datamodel.png" alt="Data Model" width="70%">
 </div>
 
-### Build the Docker image
+### Step 3: Build the Docker Image
 ```bash
 docker build -t stock_api .
 ```
-### Run the Docker container
+### Step 4: Run the Docker Container
 ```bash
 docker run -p 8000:8000 stock_api
 ```
 
-### Running tests 
+### Running Tests
+The Docker image will build and run tests automatically. Ensure the tests pass before using the API.
 
-```bash
-pytest
-```
