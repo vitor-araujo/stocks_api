@@ -1,4 +1,6 @@
-![Stock API](/images/stock_api_logo.png)
+<div align="center">
+  <img src="images/stock_api_logo.png" alt="Stock API" width="20%">
+</div>
 
 
 ![Pytest](https://img.shields.io/badge/tests-passing-brightgreen)
@@ -47,7 +49,7 @@ Stock API is a RESTful service that allows users to retrieve and update stock in
 Ensure you have all the env variables set corretly as the env example shows. Supabase will require you to create the models there, follow this modelling if you need for the basic functionality to be enabled. 
 
 <div align="center">
-  <img src="images/datamodel.png" alt="Data Model" width="50%">
+  <img src="images/datamodel.png" alt="Data Model" width="70%">
 </div>
 
 ### Build the Docker image
