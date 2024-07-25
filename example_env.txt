@@ -1,0 +1,7 @@
+POLYGON_API_KEY=
+POLYGON_BASE_URL="https://api.polygon.io"
+
+ZENROW_API_KEY=
+
+SUPABASE_URL = 
+SUPABASE_KEY = 
